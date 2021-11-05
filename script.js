@@ -35,3 +35,17 @@ function envoieMail() {
 }
 document.getElementById("valider2").addEventListener("click", envoieMail);
 
+function cachePage(){
+    bloc4.style.display = "none";
+}
+cachePage();
+
+function affichePage(){
+    bloc4.style.display = "flex";
+    bloc1.style.display = "none";
+    bloc2.style.display = "none";
+    bloc3.style.display = "none";
+    document.getElementById("merci").innerHTML="Merci "+id1.value+" et à bientôt !";
+}
+document.getElementById("ok").addEventListener("click", affichePage);
+
