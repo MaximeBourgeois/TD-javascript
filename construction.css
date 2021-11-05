@@ -90,7 +90,9 @@ body {
 }
 
 #popup {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width:50%;
     height:100px;
     border:3px solid #B77D7C;
