@@ -7,6 +7,7 @@ function cacheBloc() {
 cacheBloc();
 
 function afficheBloc(){
+    bloc1.style.display = "none";
     bloc2.style.display = "flex";
 }
 document.getElementById("valider").addEventListener("click", afficheBloc);
@@ -25,6 +26,8 @@ cacheBloc2();
 
 function afficheBloc2() {
     bloc3.style.display = "flex";
+    bloc3.style.zIndex = "1";
+    
 }
 document.getElementById("valider2").addEventListener("click", afficheBloc2);
 
@@ -45,6 +48,7 @@ function affichePage(){
     bloc1.style.display = "none";
     bloc2.style.display = "none";
     bloc3.style.display = "none";
+    texte.style.display = "none";
     document.getElementById("merci").innerHTML="Merci "+id1.value+" et à bientôt !";
 }
 document.getElementById("ok").addEventListener("click", affichePage);
