@@ -173,7 +173,8 @@ body {
 #popinPerso{ 
     background-color: white;
     width:25%;
-    border:2px solid #F6A844;
+    border:2px solid #B77D7C;
+    border-radius: 10px;
     text-align: center;
 }
 
