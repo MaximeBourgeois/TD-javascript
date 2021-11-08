@@ -53,14 +53,33 @@ function affichePage(){
 }
 document.getElementById("ok").addEventListener("click", affichePage);
 
+//disparition boite modale
 function stopCookie(){
     cookie.style.display = "none";
 }
 document.getElementById("bCookie1").addEventListener("click", stopCookie);
 
+// apparition boite modale
 function blockPerso(){
     grandPopin.style.display = "flex";
+    grandPopin.style.zIndex = "1";
 }
 document.getElementById("bCookie2").addEventListener("click", blockPerso);
 
+function stopPopin(){
+    grandPopin.style.display = "none";
+}
+document.getElementById("button_popin").addEventListener("click", stopPopin);
 
+
+document.querySelectorAll('.popVal').forEach(function(e) {
+    e.addEventListener('click', function() {
+      this.style.backgroundColor = "green";
+    })
+  });
+
+document.querySelectorAll('.popRef').forEach(function(e) {
+    e.addEventListener('click', function() {
+      this.style.backgroundColor = "red";
+    })
+  });

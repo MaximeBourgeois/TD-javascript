@@ -168,7 +168,7 @@ body {
     display: none;
     justify-content: center;
     position: fixed;
-    z-index:1;
+    z-index:-1;
 }
 
 #popinPerso{ 
@@ -176,6 +176,15 @@ body {
     width:25%;
     border:2px solid #F6A844;
     text-align: center;
+}
+
+.title_popin {
+    display: flex;
+    justify-content: space-between;
+}
+
+#button_popin {
+    height:30px;
 }
 
 #contenuPerso {
@@ -209,8 +218,9 @@ body {
     justify-content: space-between;
 }
 
-#popVal {
+.popVal, .popRef {
     border: 10px;
     margin-left: 10px;
 }
+
 
