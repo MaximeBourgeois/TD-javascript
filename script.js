@@ -71,15 +71,16 @@ function stopPopin(){
 }
 document.getElementById("button_popin").addEventListener("click", stopPopin);
 
-
-document.querySelectorAll('.popVal').forEach(function(e) {
-    e.addEventListener('click', function() {
+// change de couleur de fond en vert lorqu'on clique sur Accepter du popin
+document.querySelectorAll(".popVal").forEach(function(e) {
+    e.addEventListener("click", function() {
       this.style.backgroundColor = "green";
     })
   });
 
-document.querySelectorAll('.popRef').forEach(function(e) {
-    e.addEventListener('click', function() {
+// change de couleur de fond en rouge lorqu'on clique sur Refuser du popin
+document.querySelectorAll(".popRef").forEach(function(e) {
+    e.addEventListener("click", function() {
       this.style.backgroundColor = "red";
     })
   });
