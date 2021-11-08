@@ -76,6 +76,8 @@ function changeColorValidate () {
     this.style.backgroundColor = "green";
     let reverse = this.getAttribute("data-deline");
     document.getElementById(reverse).style.backgroundColor = "#cecece";
+    //pour bloquer le bouton non-choisi
+    this.setAttribute("disabled","")
 }
 document.getElementById("contenuValidate").addEventListener("click", changeColorValidate);
 document.getElementById("pubValidate").addEventListener("click", changeColorValidate);
