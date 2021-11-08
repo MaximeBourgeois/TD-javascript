@@ -53,3 +53,8 @@ function affichePage(){
 }
 document.getElementById("ok").addEventListener("click", affichePage);
 
+function stopCookie(){
+    cookie.style.display = "none";
+}
+document.getElementById("bCookie1").addEventListener("click", stopCookie);
+
