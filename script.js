@@ -58,3 +58,9 @@ function stopCookie(){
 }
 document.getElementById("bCookie1").addEventListener("click", stopCookie);
 
+function blockPerso(){
+    grandPopin.style.display = "flex";
+}
+document.getElementById("bCookie2").addEventListener("click", blockPerso);
+
+

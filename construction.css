@@ -162,3 +162,55 @@ body {
     background-color: #F6A844;
 }
 
+#grandPopin {
+    
+    width:100%;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index:1;
+}
+
+#popinPerso{ 
+    background-color: white;
+    width:25%;
+    border:2px solid #F6A844;
+    text-align: center;
+}
+
+#contenuPerso {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #d8cfcf;
+    margin-top: 10px;
+}
+
+#pubStandard {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #d8cfcf;
+    margin-top: 10px;
+
+}
+
+#mesureAud {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #d8cfcf;
+    margin-top: 10px;
+
+}
+
+#popBut {
+    display: flex;
+    justify-content: space-between;
+}
+
+#popVal {
+    border: 10px;
+    margin-left: 10px;
+}
+
