@@ -74,6 +74,8 @@ document.getElementById("button_popin").addEventListener("click", stopPopin);
 // change de couleur de fond en vert lorqu'on clique sur Accepter du popin
 function changeColorValidate () {
     this.style.backgroundColor = "green";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
 }
 document.getElementById("contenuValidate").addEventListener("click", changeColorValidate);
 document.getElementById("pubValidate").addEventListener("click", changeColorValidate);
@@ -83,6 +85,8 @@ document.getElementById("audValidate").addEventListener("click", changeColorVali
 
 function changeColorRefused(){
     this.style.backgroundColor = "red";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
 }
 document.getElementById("contenuRefused").addEventListener("click", changeColorRefused);
 document.getElementById("pubRefused").addEventListener("click", changeColorRefused);
