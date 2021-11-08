@@ -72,15 +72,18 @@ function stopPopin(){
 document.getElementById("button_popin").addEventListener("click", stopPopin);
 
 // change de couleur de fond en vert lorqu'on clique sur Accepter du popin
-document.querySelectorAll(".popVal").forEach(function(e) {
-    e.addEventListener("click", function() {
-      this.style.backgroundColor = "green";
-    })
-  });
+function changeColorValidate () {
+    this.style.backgroundColor = "green";
+}
+document.getElementById("contenuValidate").addEventListener("click", changeColorValidate);
+document.getElementById("pubValidate").addEventListener("click", changeColorValidate);
+document.getElementById("audValidate").addEventListener("click", changeColorValidate);
 
 // change de couleur de fond en rouge lorqu'on clique sur Refuser du popin
-document.querySelectorAll(".popRef").forEach(function(e) {
-    e.addEventListener("click", function() {
-      this.style.backgroundColor = "red";
-    })
-  });
+
+function changeColorRefused(){
+    this.style.backgroundColor = "red";
+}
+document.getElementById("contenuRefused").addEventListener("click", changeColorRefused);
+document.getElementById("pubRefused").addEventListener("click", changeColorRefused);
+document.getElementById("audRefused").addEventListener("click", changeColorRefused);
