@@ -79,7 +79,7 @@ function changeColorValidate() {
     //pour bloquer le bouton non-choisi
     this.setAttribute("disabled", "")
     localStorage.setItem("contenuValidate", "green");
-    
+
 }
 document.getElementById("contenuValidate").addEventListener("click", changeColorValidate);
 
@@ -90,7 +90,7 @@ function changeColorPubValidate() {
     //pour bloquer le bouton non-choisi
     this.setAttribute("disabled", "")
     localStorage.setItem("pubValidate", "green");
-    
+
 }
 document.getElementById("pubValidate").addEventListener("click", changeColorPubValidate);
 
@@ -101,7 +101,7 @@ function changeColorAudValidate() {
     //pour bloquer le bouton non-choisi
     this.setAttribute("disabled", "")
     localStorage.setItem("audValidate", "green");
-    
+
 }
 document.getElementById("audValidate").addEventListener("click", changeColorAudValidate);
 
@@ -136,70 +136,68 @@ function changeColorAudRefused() {
 document.getElementById("audRefused").addEventListener("click", changeColorAudRefused);
 
 // sauvegarder couleurs des bouttons choisis dans le navigateur
-function resultatContenuValidate (){
+function resultatContenuValidate() {
     let saveColorContenuValidate = localStorage.getItem("contenuValidate")
-    if (saveColorContenuValidate != null){
-      document.getElementById("contenuValidate").style.backgroundColor=saveColorContenuValidate;
+    if (saveColorContenuValidate != null) {
+        document.getElementById("contenuValidate").style.backgroundColor = saveColorContenuValidate;
     }
     else {
-      document.getElementById("contenuValidate").style.backgroundColor="#4d4d4d";
+        document.getElementById("contenuValidate").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatContenuValidate()
+}
+resultatContenuValidate()
 
-  function resultatValidate2 (){
+function resultatValidate2() {
     let saveColorPubValidate = localStorage.getItem("pubValidate")
-    if (saveColorPubValidate != null){
-      document.getElementById("pubValidate").style.backgroundColor=saveColorPubValidate;
+    if (saveColorPubValidate != null) {
+        document.getElementById("pubValidate").style.backgroundColor = saveColorPubValidate;
     }
     else {
-      document.getElementById("pubValidate").style.backgroundColor="#4d4d4d";
+        document.getElementById("pubValidate").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatValidate2()
+}
+resultatValidate2()
 
-  function resultatValidate3 (){
+function resultatValidate3() {
     let saveColorAudValidate = localStorage.getItem("audValidate")
-    if (saveColorAudValidate != null){
-      document.getElementById("audValidate").style.backgroundColor=saveColorAudValidate;
+    if (saveColorAudValidate != null) {
+        document.getElementById("audValidate").style.backgroundColor = saveColorAudValidate;
     }
     else {
-      document.getElementById("audValidate").style.backgroundColor="#4d4d4d";
+        document.getElementById("audValidate").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatValidate3()
+}
+resultatValidate3()
 
-  function resultatRefused (){
+function resultatRefused() {
     let saveColorContenuRefused = localStorage.getItem("contenuRefused")
-    if (saveColorContenuRefused != null){
-      document.getElementById("contenuRefused").style.backgroundColor=saveColorContenuRefused;
+    if (saveColorContenuRefused != null) {
+        document.getElementById("contenuRefused").style.backgroundColor = saveColorContenuRefused;
     }
     else {
-      document.getElementById("contenuRefused").style.backgroundColor="#4d4d4d";
+        document.getElementById("contenuRefused").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatRefused()
+}
+resultatRefused()
 
-  function resultatRefused2 (){
+function resultatRefused2() {
     let saveColorPubRefused = localStorage.getItem("pubRefused")
-    if (saveColorPubRefused != null){
-      document.getElementById("pubRefused").style.backgroundColor=saveColorPubRefused;
+    if (saveColorPubRefused != null) {
+        document.getElementById("pubRefused").style.backgroundColor = saveColorPubRefused;
     }
     else {
-      document.getElementById("pubRefused").style.backgroundColor="#4d4d4d";
+        document.getElementById("pubRefused").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatRefused2()
+}
+resultatRefused2()
 
-  function resultatRefused3 (){
+function resultatRefused3() {
     let saveColorAudRefused = localStorage.getItem("audRefused")
-    if (saveColorAudRefused != null){
-      document.getElementById("audRefused").style.backgroundColor=saveColorAudRefused;
+    if (saveColorAudRefused != null) {
+        document.getElementById("audRefused").style.backgroundColor = saveColorAudRefused;
     }
     else {
-      document.getElementById("audRefused").style.backgroundColor="#4d4d4d";
+        document.getElementById("audRefused").style.backgroundColor = "#4d4d4d";
     }
-  }
-  resultatRefused3()
-
-
+}
+resultatRefused3()
