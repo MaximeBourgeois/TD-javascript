@@ -78,10 +78,33 @@ function changeColorValidate() {
     document.getElementById(reverse).style.backgroundColor = "#cecece";
     //pour bloquer le bouton non-choisi
     this.setAttribute("disabled", "")
+    localStorage.setItem("contenuValidate", "green");
+    
 }
 document.getElementById("contenuValidate").addEventListener("click", changeColorValidate);
-document.getElementById("pubValidate").addEventListener("click", changeColorValidate);
-document.getElementById("audValidate").addEventListener("click", changeColorValidate);
+
+function changeColorPubValidate() {
+    this.style.backgroundColor = "green";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
+    //pour bloquer le bouton non-choisi
+    this.setAttribute("disabled", "")
+    localStorage.setItem("pubValidate", "green");
+    
+}
+document.getElementById("pubValidate").addEventListener("click", changeColorPubValidate);
+
+function changeColorAudValidate() {
+    this.style.backgroundColor = "green";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
+    //pour bloquer le bouton non-choisi
+    this.setAttribute("disabled", "")
+    localStorage.setItem("audValidate", "green");
+    
+}
+document.getElementById("audValidate").addEventListener("click", changeColorAudValidate);
+
 
 // change de couleur de fond en rouge lorqu'on clique sur Refuser du popin
 
@@ -89,7 +112,94 @@ function changeColorRefused() {
     this.style.backgroundColor = "red";
     let reverse = this.getAttribute("data-deline");
     document.getElementById(reverse).style.backgroundColor = "#cecece";
+    this.setAttribute("disabled", "")
+    localStorage.setItem("contenuRefused", "red");
 }
 document.getElementById("contenuRefused").addEventListener("click", changeColorRefused);
-document.getElementById("pubRefused").addEventListener("click", changeColorRefused);
-document.getElementById("audRefused").addEventListener("click", changeColorRefused);
+
+function changeColorPubRefused() {
+    this.style.backgroundColor = "red";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
+    this.setAttribute("disabled", "")
+    localStorage.setItem("pubRefused", "red");
+}
+document.getElementById("pubRefused").addEventListener("click", changeColorPubRefused);
+
+function changeColorAudRefused() {
+    this.style.backgroundColor = "red";
+    let reverse = this.getAttribute("data-deline");
+    document.getElementById(reverse).style.backgroundColor = "#cecece";
+    this.setAttribute("disabled", "")
+    localStorage.setItem("audRefused", "red");
+}
+document.getElementById("audRefused").addEventListener("click", changeColorAudRefused);
+
+// sauvegarder couleurs des bouttons choisis dans le navigateur
+function resultatContenuValidate (){
+    let saveColorContenuValidate = localStorage.getItem("contenuValidate")
+    if (saveColorContenuValidate != null){
+      document.getElementById("contenuValidate").style.backgroundColor=saveColorContenuValidate;
+    }
+    else {
+      document.getElementById("contenuValidate").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatContenuValidate()
+
+  function resultatValidate2 (){
+    let saveColorPubValidate = localStorage.getItem("pubValidate")
+    if (saveColorPubValidate != null){
+      document.getElementById("pubValidate").style.backgroundColor=saveColorPubValidate;
+    }
+    else {
+      document.getElementById("pubValidate").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatValidate2()
+
+  function resultatValidate3 (){
+    let saveColorAudValidate = localStorage.getItem("audValidate")
+    if (saveColorAudValidate != null){
+      document.getElementById("audValidate").style.backgroundColor=saveColorAudValidate;
+    }
+    else {
+      document.getElementById("audValidate").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatValidate3()
+
+  function resultatRefused (){
+    let saveColorContenuRefused = localStorage.getItem("contenuRefused")
+    if (saveColorContenuRefused != null){
+      document.getElementById("contenuRefused").style.backgroundColor=saveColorContenuRefused;
+    }
+    else {
+      document.getElementById("contenuRefused").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatRefused()
+
+  function resultatRefused2 (){
+    let saveColorPubRefused = localStorage.getItem("pubRefused")
+    if (saveColorPubRefused != null){
+      document.getElementById("pubRefused").style.backgroundColor=saveColorPubRefused;
+    }
+    else {
+      document.getElementById("pubRefused").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatRefused2()
+
+  function resultatRefused3 (){
+    let saveColorAudRefused = localStorage.getItem("audRefused")
+    if (saveColorAudRefused != null){
+      document.getElementById("audRefused").style.backgroundColor=saveColorAudRefused;
+    }
+    else {
+      document.getElementById("audRefused").style.backgroundColor="#4d4d4d";
+    }
+  }
+  resultatRefused3()
+
+
